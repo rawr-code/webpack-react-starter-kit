@@ -1,23 +1,21 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const DashboardPlugin = require("webpack-dashboard");
 
-const HtmlPlugin = new HtmlWebPackPlugin({
+const HtmlPlugin = new HtmlWebpackPlugin({
   template: "./public/index.html",
-  filename: "index.html",
-  meta: {
-    viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-  }
+  filename: "index.html"
 });
 
-const FaviconPlugin = new FaviconsWebpackPlugin({
+const FaviconsPlugin = new FaviconsWebpackPlugin({
   logo: "./public/favicon.png",
   prefix: "icons-[hash]/",
   emitStats: false,
   statsFilename: "iconstats-[hash].json",
   persistentCache: true,
   inject: true,
-  background: "#000000",
-  title: "SEO Title App",
+  background: "#fff",
+  title: "Webpack App",
   icons: {
     android: true,
     appleIcon: true,
@@ -28,7 +26,7 @@ const FaviconPlugin = new FaviconsWebpackPlugin({
     opengraph: true,
     twitter: true,
     yandex: true,
-    windows: false
+    windows: true
   }
 });
 
@@ -44,9 +42,17 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: "html-loader"
+        use: [
+          {
+            loader: "html-loader",
+            options: { minimize: true }
+          }
+        ]
       }
     ]
   },
-  plugins: [HtmlPlugin, FaviconPlugin]
+  resolve: {
+    extensions: [".js", ".jsx"]
+  },
+  plugins: [new DashboardPlugin(), FaviconsPlugin, HtmlPlugin]
 };
