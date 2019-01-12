@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
-const DashboardPlugin = require("webpack-dashboard");
 
 const HtmlPlugin = new HtmlWebpackPlugin({
   template: "./public/index.html",
@@ -54,5 +53,12 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"]
   },
-  plugins: [new DashboardPlugin(), FaviconsPlugin, HtmlPlugin]
+  plugins: [FaviconsPlugin, HtmlPlugin],
+  devServer: {
+    contentBase: "./dist",
+    compress: true,
+    port: 3000,
+    historyApiFallback: true,
+    publicPath: "/"
+  }
 };

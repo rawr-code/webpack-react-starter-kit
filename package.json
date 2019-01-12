@@ -6,8 +6,8 @@
   "author": "Emmanuel Villegas Gonzalez <emmanuelvillegas01@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dashboard -- webpack-dev-server --open --mode development",
-    "build": "webpack-dashboard -- webpack --mode production"
+    "start": "webpack-dev-server --mode development --open --colors",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
