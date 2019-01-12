@@ -1,0 +1,8 @@
+{
+  "name": "Webpack-React-Starter-Kit",
+  "version": "1.0.0",
+  "description": "Webpack React Starter Kit",
+  "main": "index.js",
+  "author": "Emmanuel Villegas Gonzalez <emmanuelvillegas01@gmail.com>",
+  "license": "MIT"
+}
