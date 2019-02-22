@@ -30,7 +30,7 @@ const config = {
   output: {
     filename: 'javascripts/[name].[hash].js',
     chunkFilename: 'javascripts/[name].[hash].chunk.js',
-    publicPath: '/'
+    publicPath: './'
   },
 
   mode: 'production',
