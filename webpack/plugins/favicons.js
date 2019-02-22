@@ -2,7 +2,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = new FaviconsWebpackPlugin({
   logo: './public/favicon.png',
-  prefix: 'icons-[hash]/',
+  prefix: 'icons/',
   emitStats: false,
   statsFilename: 'iconstats-[hash].json',
   persistentCache: true,
@@ -10,15 +10,15 @@ module.exports = new FaviconsWebpackPlugin({
   background: '#fff',
   title: 'Webpack App',
   icons: {
-    android: true,
-    appleIcon: true,
-    appleStartup: true,
+    android: false,
+    appleIcon: false,
+    appleStartup: false,
     coast: false,
     favicons: true,
-    firefox: true,
-    opengraph: true,
-    twitter: true,
-    yandex: true,
-    windows: true
+    firefox: false,
+    opengraph: false,
+    twitter: false,
+    yandex: false,
+    windows: false
   }
 });
