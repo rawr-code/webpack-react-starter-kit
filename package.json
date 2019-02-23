@@ -6,7 +6,7 @@
   "author": "Emmanuel Villegas Gonzalez <emmanuelvillegas01@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/development.js --watch",
+    "start": "webpack-dev-server --config ./webpack/development.js",
     "build": "webpack --progress --config ./webpack/production.js"
   },
   "devDependencies": {
