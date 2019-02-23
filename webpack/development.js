@@ -11,7 +11,8 @@ const rules = {
 
 const plugins = {
   html: require('./plugins/html'),
-  favicons: require('./plugins/favicons')
+  favicons: require('./plugins/favicons'),
+  simpleProgress: require('./plugins/simpleProgress')
 };
 
 const config = {
@@ -42,13 +43,15 @@ const config = {
 
   devtool: 'source-map',
 
-  plugins: [plugins.html, plugins.favicons],
+  plugins: [plugins.simpleProgress, plugins.html, plugins.favicons],
 
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     port: 3000,
+    open: true,
     historyApiFallback: true,
     inline: true,
+    noInfo: true,
     watchOptions: {
       ignored: /node_modules/
     }
