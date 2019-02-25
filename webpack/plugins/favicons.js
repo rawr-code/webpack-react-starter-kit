@@ -2,9 +2,9 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = new FaviconsWebpackPlugin({
   logo: './public/favicon.png',
-  prefix: 'icons/',
+  prefix: 'favicons/',
   emitStats: false,
-  statsFilename: 'iconstats-[hash].json',
+  statsFilename: 'faviconstats-[hash].json',
   persistentCache: true,
   inject: true,
   background: '#fff',

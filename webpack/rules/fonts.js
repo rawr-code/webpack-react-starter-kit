@@ -4,7 +4,8 @@ module.exports = {
     {
       loader: 'file-loader',
       options: {
-        name: 'assets/fonts/[name]-[hash].[ext]'
+        name: 'assets/fonts/[name]-[hash].[ext]',
+        limit: 8192
       }
     }
   ]

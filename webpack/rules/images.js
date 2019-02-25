@@ -4,9 +4,9 @@ module.exports = {
     {
       loader: 'file-loader',
       options: {
-        // publicPath: '../',
         outputPath: 'assets',
-        name: 'images/[name]-[hash].[ext]'
+        name: 'images/[name]-[hash].[ext]',
+        limit: 8192
       }
     },
     {
