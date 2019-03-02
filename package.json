@@ -25,7 +25,6 @@
     "image-webpack-loader": "^4.6.0",
     "lodash-webpack-plugin": "^0.11.5",
     "mini-css-extract-plugin": "^0.5.0",
-    "postcss-loader": "^3.0.0",
     "resolve-url-loader": "^3.0.1",
     "sass-loader": "^7.1.0",
     "simple-progress-webpack-plugin": "^1.1.2",

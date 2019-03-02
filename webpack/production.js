@@ -15,7 +15,6 @@ const rules = {
 
 const loaders = {
   css: require('./loaders/css'),
-  postcss: require('./loaders/postcss'),
   sass: require('./loaders/sass')
 };
 
@@ -49,7 +48,6 @@ const config = {
         use: [
           MiniCssExtractPlugin.loader,
           loaders.css,
-          loaders.postcss,
           'resolve-url-loader',
           loaders.sass
         ]
