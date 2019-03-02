@@ -1,5 +1,5 @@
 {
-  "name": "Webpack-React-Starter-Kit",
+  "name": "webpack-react-starter-kit",
   "version": "1.0.0",
   "description": "Webpack React Starter Kit",
   "main": "index.js",
@@ -11,10 +11,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
-    "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "autoprefixer": "^9.4.8",
     "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^1.0.1",
     "css-loader": "^2.1.0",
